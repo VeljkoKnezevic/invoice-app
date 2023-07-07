@@ -3,7 +3,9 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 const HeadingItems = () => {
   return (
     <>
-      <img src="/assets/logo-group.svg" alt="Logo" />
+      <h1>
+        <img src="/assets/logo-group.svg" alt="Logo" />
+      </h1>
       <button
         className="bg-[url(/assets/icon-moon.svg)] bg-no-repeat p-4 bg-center ml-auto mr-6"
         aria-label="Turn on/off dark mode"
