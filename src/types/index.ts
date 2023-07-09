@@ -47,3 +47,5 @@ export type Item = {
   price: number;
   total: number;
 };
+
+export type Status = "paid" | "pending" | "draft";
