@@ -4,19 +4,19 @@ const Filters = () => {
   const { data } = useInvoiceApi();
 
   return (
-    <section className="flex px-6 mt-8 items-center">
+    <section className="mt-8 flex items-center px-6">
       <div>
-        <h2 className="text-2xl text-8 font-bold -tracking-[0.75px]">
+        <h2 className="text-2xl font-bold -tracking-[0.75px] text-8">
           Invoices
         </h2>
-        <p className="text-[13px]/[15px] text-6 -tracking-[0.1px] font-normal">
+        <p className="text-[13px]/[15px] font-normal -tracking-[0.1px] text-6">
           {data?.length} invoices
         </p>
       </div>
-      <button className="ml-auto bg-[url(/assets/icon-arrow-down.svg)] bg-no-repeat w-[54px] bg-[right_top_50%] text-left h-[15px] text-[15px]/[1] font-bold -tracking-[0.25px] mr-[19px]">
+      <button className="ml-auto mr-[19px] h-[15px] w-[54px] bg-[url(/assets/icon-arrow-down.svg)] bg-[right_top_50%] bg-no-repeat text-left text-[15px]/[1] font-bold -tracking-[0.25px]">
         Filter
       </button>
-      <button className="text-right pt-4 pr-[15px] pb-[13px] pl-[46px] bg-1 rounded-3xl text-white text-[15px]/[1] -tracking-[0.25px] bg-[url(/assets/icon-new-button.svg)] bg-no-repeat bg-[left_6px_top_6px]">
+      <button className="rounded-3xl bg-1 bg-[url(/assets/icon-new-button.svg)] bg-[left_6px_top_6px] bg-no-repeat pb-[13px] pl-[46px] pr-[15px] pt-4 text-right text-[15px]/[1] -tracking-[0.25px] text-white">
         New
       </button>
     </section>

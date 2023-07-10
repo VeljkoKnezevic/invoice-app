@@ -52,6 +52,7 @@
     "postcss-preset-env": "^9.0.0",
     "postcss-reporter": "^7.0.5",
     "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "start-server-and-test": "^2.0.0",
     "stylelint": "^15.9.0",
     "stylelint-config-css-modules": "^4.2.0",

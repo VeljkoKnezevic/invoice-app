@@ -48,4 +48,4 @@ export type Item = {
   total: number;
 };
 
-export type Status = "paid" | "pending" | "draft";
+export type TStatus = "paid" | "pending" | "draft";

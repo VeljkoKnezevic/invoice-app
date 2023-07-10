@@ -7,12 +7,12 @@ const HeadingItems = () => {
         <img src="/assets/logo-group.svg" alt="Logo" />
       </h1>
       <button
-        className="bg-[url(/assets/icon-moon.svg)] bg-no-repeat p-4 bg-center ml-auto mr-6"
+        className="ml-auto mr-6 bg-[url(/assets/icon-moon.svg)] bg-center bg-no-repeat p-4"
         aria-label="Turn on/off dark mode"
       ></button>
-      <div className="border-l-[1px] h-[72px] border-[#494e6e]"></div>
+      <div className="h-[72px] border-l-[1px] border-[#494e6e]"></div>
       <img
-        className="rounded-full w-8 h-8 mx-6 border-l-[1px]"
+        className="mx-6 h-8 w-8 rounded-full border-l-[1px]"
         src="/assets/image-avatar.jpg"
         alt="Avatar"
       />
@@ -27,12 +27,12 @@ const Heading = () => {
     <>
       {width < 1440 ? (
         // For mobile and tablet
-        <header className="bg-3 flex items-center">
+        <header className="flex items-center bg-3">
           <HeadingItems />
         </header>
       ) : (
         // For desktop
-        <aside className="bg-3 flex items-center">
+        <aside className="flex items-center bg-3">
           <HeadingItems />
         </aside>
       )}

@@ -13,7 +13,7 @@ const Home = ({ data }: HomeProps) => {
       <Heading />
       <main>
         <Filters />
-        <div className="mx-6 mt-8 pb-[105px] flex flex-col gap-4">
+        <div className="mx-6 mt-8 flex flex-col gap-4 pb-[105px]">
           {data?.map((invoice) => {
             return <Invoice key={invoice.id} data={invoice} />;
           })}
