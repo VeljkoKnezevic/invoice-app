@@ -1,8 +1,8 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import useInvoiceApi from "./hooks/useInvoiceApi";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ViewInvoice from "./components/ViewInvoice";
 import Home from "./components/Home";
+import ViewInvoice from "./components/ViewInvoice";
+import useInvoiceApi from "./hooks/useInvoiceApi";
 
 function App() {
   const { data } = useInvoiceApi();

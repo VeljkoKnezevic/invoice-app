@@ -1,7 +1,7 @@
-import Heading from "./Heading";
-import Filters from "./Filters";
-import Invoice from "./Invoice";
 import { Invoices } from "@/types";
+import Filters from "./Filters";
+import Heading from "./Heading";
+import Invoice from "./Invoice";
 
 type HomeProps = {
   data: Invoices | undefined;
