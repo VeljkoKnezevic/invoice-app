@@ -17,9 +17,9 @@ const Status = ({ status }: StatusData) => {
           className="mb-[2px] h-2 w-2 rounded-full"
           style={dotStyle(status)}
         ></div>
-        <p className="text-[15px]/[1] font-bold -tracking-[0.25px]">
+        <span className="text-[15px]/[1] font-bold -tracking-[0.25px]">
           {status.charAt(0).toUpperCase() + status.slice(1)}
-        </p>
+        </span>
       </div>
     );
   }

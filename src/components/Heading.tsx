@@ -1,6 +1,9 @@
-import { useWindowSize } from "@/hooks/useWindowSize";
+import useDarkMode from "@/hooks/useDarkMode";
+import useWindowWidth from "@/hooks/useWindowWidth";
 
+useWindowWidth;
 const HeadingItems = () => {
+  const { toggleDark } = useDarkMode();
   return (
     <>
       <h1>
@@ -9,6 +12,7 @@ const HeadingItems = () => {
       <button
         className="ml-auto mr-6 bg-[url(/assets/icon-moon.svg)] bg-center bg-no-repeat p-4"
         aria-label="Turn on/off dark mode"
+        onClick={() => toggleDark()}
       ></button>
       <div className="h-[72px] border-l-[1px] border-[#494e6e]"></div>
       <img
@@ -21,11 +25,11 @@ const HeadingItems = () => {
 };
 
 const Heading = () => {
-  const { width } = useWindowSize();
+  const { windowWidth } = useWindowWidth();
 
   return (
     <>
-      {width < 1440 ? (
+      {windowWidth < 1440 ? (
         // For mobile and tablet
         <header className="flex items-center bg-3">
           <HeadingItems />

@@ -4,6 +4,11 @@
 
 @layer base {
     body {
-        @apply bg-11 h-screen font-spartan
+        @apply h-screen font-spartan bg-11 
     }
+
+    .dark {
+        @apply bg-12
+    }
+
 }

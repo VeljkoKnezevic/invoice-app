@@ -1,12 +1,21 @@
 import { TStatus } from "@/types";
+import useDarkMode from "./useDarkMode";
 
 export function useStatusStyling() {
+  const { isDark } = useDarkMode();
   const statusStyle = (status: TStatus) => {
     if (status === "draft") {
-      return {
-        color: "#373B53",
-        backgroundColor: "rgba(55, 59, 83, 0.057)",
-      };
+      if (isDark) {
+        return {
+          color: "#DFE3FA",
+          backgroundColor: "rgba(223, 227, 250, 0.057)",
+        };
+      } else {
+        return {
+          color: "#373B53",
+          backgroundColor: "rgba(55, 59, 83, 0.057)",
+        };
+      }
     } else if (status === "paid") {
       return {
         color: "#33D69F",
@@ -22,9 +31,15 @@ export function useStatusStyling() {
 
   const dotStyle = (status: TStatus) => {
     if (status === "draft") {
-      return {
-        backgroundColor: "rgb(55, 59, 83)",
-      };
+      if (isDark) {
+        return {
+          backgroundColor: "rgba(223, 227, 250)",
+        };
+      } else {
+        return {
+          backgroundColor: "rgb(55, 59, 83)",
+        };
+      }
     } else if (status === "paid") {
       return {
         backgroundColor: "rgb(51, 214, 159)",
